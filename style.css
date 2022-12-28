@@ -1,0 +1,75 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Unbounded', cursiva, arial;
+}
+
+.kanban{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background-color: aquamarine;
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+.novo-item{
+  grid-column: 1/4;
+  align-self: end;
+  justify-self: start;
+}
+
+.item {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.item-criado{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn{
+  border: 0px;
+  background: transparent;
+  font-family: 'Unbounded', cursiva, arial;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: red;
+}
+.dragging{
+  opacity: 0.5;
+}
+.t1{
+  align-self: end;
+  justify-self: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+.t2{
+  align-self: end;
+  justify-self: center;
+  grid-column: 2;
+  grid-row: 2;
+}
+.t3{
+  align-self: end;
+  justify-self: center;
+  grid-column: 3;
+  grid-row: 2;
+}
